@@ -14,10 +14,10 @@
                     </div>
                     @endif
                     <p>{{ $entry->content }} </p>
-
-                    @if($entry->user_id === auth()->id())
+                    
+                    @can('update', $entry)
                         <a href="{{ url('entries/'.$entry->id.'/edit') }}" class="btn btn-primary">Edit</a>
-                    @endif
+                    @endcan
                 </div>
             </div>
         </div>
