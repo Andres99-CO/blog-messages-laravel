@@ -25,7 +25,7 @@
                     {{-- Entries --}}
                     @foreach ($entries as $entry)
                     <div class="card mt-2">
-                        <div class="card-header"> <a href="{{ url('/entries/'.$entry->id) }}">{{ $entry->title }}</a></div>
+                        <div class="card-header"> <a href="{{ $entry->getUrl() }}">{{ $entry->title }}</a></div>
                         <div class="card-body">
                             <p>{{ $entry->content }} </p>
                         </div>

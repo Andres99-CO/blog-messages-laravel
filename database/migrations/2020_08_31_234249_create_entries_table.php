@@ -20,6 +20,8 @@ class CreateEntriesTable extends Migration
             // author
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
+            // SLUG
+            $table->string('slug');
             $table->timestamps();
             $table->engine = 'InnoDB';
         });

@@ -15,7 +15,7 @@
                     @endif
                     <div class="row">
                         <div class="col-md-9 mx-auto">
-                        <form action="{{ url('/entries/'.$entry->id) }}" method="POST">
+                        <form action="{{ url('entries/'.$entry->id) }}" method="POST">
                                 @csrf
                                 @method('PUT')
                                 <div class="form-group">

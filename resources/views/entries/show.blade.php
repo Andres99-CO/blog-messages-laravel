@@ -16,7 +16,7 @@
                     <p>{{ $entry->content }} </p>
 
                     @if($entry->user_id === auth()->id())
-                        <a href="{{ url('/entries/'.$entry->id.'/edit') }}" class="btn btn-primary">Edit</a>
+                        <a href="{{ url('entries/'.$entry->id.'/edit') }}" class="btn btn-primary">Edit</a>
                     @endif
                 </div>
             </div>
